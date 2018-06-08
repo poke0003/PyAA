@@ -1,0 +1,3 @@
+Test Name|Land|0|8|Germany
+Test Name 2|Sea|0|0|N/A
+Test Name 3|Island|1|10|Japan

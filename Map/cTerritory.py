@@ -29,8 +29,11 @@ class Territory:
         else:
             return self.owner[max([smallKey for smallKey in self.owner.keys() if int(float(smallKey)*10) <= int(float(referenceTurn)*10)])]
 
+    def __str__(self):
+        return f'{self.name}: {self.terrType} type with income {self.income} owned by {self.getCurrentOwner()} - Capital status: {self.isCapital}'
+
 #WORKS!!  Still need to build test Routine
 if __name__ == '__main__':
     t = Territory('West Germany', 'Land', True, 10, 'Germany')
-    print (f'{t.name} is a {t.terrType} type territory owned by {t.getCurrentOwner()}.  Income is {t.income}.  Is it the capital: {t.isCapital}!')
+    print (t)
     #insert test routine here
